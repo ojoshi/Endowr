@@ -1,0 +1,255 @@
+/*************************
+-------HTML5--------------
+*************************/
+section,header,footer,aside,article,nav {
+    display: block;
+}
+/*************************
+-------GENERAL------------
+*************************/
+body {
+    background: #dcd2ae url(../img/header-bg.png) repeat-x;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: myriad-pro, helvetica, arial, sans-serif;
+}
+a:hover {
+    text-decoration: none;
+}
+p {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: myriad-pro, helvetica, arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: myriad-pro, helvetica, arial, sans-serif;
+    font-weight: normal;
+}
+
+li {
+    margin-left: 0;
+    list-style: none;
+}
+ul {
+    overflow: hidden;
+}
+.rounded5 {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.rounded15 {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.container_24 {
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+}
+/********************************
+------------HEADER---------------
+********************************/
+header {
+    color: White;
+}
+    header a {
+    color: White;
+    font-size: 16px;
+    text-shadow: 0 1px 0 #281f1b;
+    }
+    /*******************
+	----NAV----------
+	*******************/
+	header nav {
+		overflow: hidden;
+		float: left;
+		margin-top: 5px;
+		height: 58px;
+		line-height: 58px;
+	}
+    
+	header nav li {
+		float: left;
+		margin-left: 25px;
+	}
+	
+		header nav a, header nav a:visited {
+			font-size:  16px;
+            font-weight: bold;
+			color: #fff;
+			text-shadow: 0 1px 0 #281f1b;
+			padding: 4px;
+		}
+		
+		header nav a:hover, nav .selected {
+			background: #fff;
+            color: #009fc6;
+            text-decoration: none;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;	
+			text-shadow: 0 1px 0 #fff;	
+		}
+        
+/*******************
+----SOCIAL ICON-----
+*******************/
+#headSocial {
+	position: absolute;
+	background: url(../img/header-divider.png) no-repeat 0 10px;
+	right: 5px;
+	top: 10px;
+	padding: 20px 0;
+}
+
+	#headSocial li{
+		display: inline;
+        margin-left: 23px;
+	}
+    
+    #headSocial a{
+        color: Black;
+    }
+	
+	#headSocial img {
+		float: left;
+        margin-left: 28px;
+        margin-top: 6px;
+		-webkit-transition: -webkit-border-radius .2s;
+		-moz-transition: -moz-border-radius .2s;
+		transition: border-radius .2s;
+	}
+	
+	#headSocial img:hover {
+		-webkit-border-radius: 13px;
+		-moz-border-radius: 13px;
+		border-radius: 13px;
+		-moz-box-shadow: 0 0 0 1px #fff;
+		-webkit-box-shadow: 0 0 0 1px #fff;
+		-moz-box-shadow: 0 0 0 1px #fff;
+	}
+   
+    header menu a {
+        line-height: 40px;
+        font-size: 16px;
+    }
+/*******************
+----HEADER FORM-----
+*******************/
+header form {
+	float: right;
+	margin-top: 19px;
+}
+    
+    #profpic {
+        
+    }
+    
+	header form p {
+		font-size:  16px;
+		color: white;
+		text-shadow: 0 1px 0 #281f1b;
+        margin-bottom: 0px;
+		position: relative;
+	}
+	
+	header input {
+		background: #fff;
+		background: url(../img/searchIcon.png) 98% 48% no-repeat, background: white;
+		padding: 5px 20px;
+		border: 1px solid #206577;
+		color: white;
+		margin-left: 5px;
+	}
+	
+	header form input {
+		margin-right: 0;
+	}
+/*******************
+--------MAIN------
+*******************/
+#bgInfo, #statement, #resume, #recommendation, #contact, #links {
+    background: #fff;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	 
+}
+
+#profpic {
+    background: url(../img/profpic.png) no-repeat center center;
+}
+
+#bgInfo, #statement, #resume, #recommendation, #profpic, #misc {
+    margin-top: 25px;
+}
+
+#misc {
+    margin-bottom: 25px;
+}
+
+section h1 {
+    text-align: center;
+    color: #009fc6;
+    margin:0px;
+    padding: 0px;
+}
+
+section h3 {
+    text-align: center;
+    color: #ff7800;
+}
+
+section h5 span{
+    color: #009fc6;
+}
+
+section h5 {
+    color: #ff7800;
+    padding-left: 10px;
+}
+
+/***********************
+------SITE INFO---------
+***********************/
+#siteInfo {
+ background: #249bc3;
+ height: 50px;
+ line-height: 50px;
+ color: white;
+ overflow: hidden;
+ text-shadow: 0 1px 0 #165665;
+}
+
+#siteInfo p {
+ float: left;
+ line-height: 50px;
+ text-shadow: 0 -1px 0 #165665;
+}
+
+footer nav {
+ float: right;
+}
+
+footer nav li {
+ float: left;
+}
+
+footer nav a, footer nav a:visited {
+ color: white;
+}
+
+footer nav li:before {
+ content: '|';
+ padding: 5px;
+
+}
+
+footer nav li:first-child::before {
+ content: ' ';
+}
