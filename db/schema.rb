@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120211231414) do
+ActiveRecord::Schema.define(:version => 20120212003751) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(:version => 20120211231414) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "firstName"
+    t.string   "lastName"
   end
 
   add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
@@ -44,6 +46,8 @@ ActiveRecord::Schema.define(:version => 20120211231414) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "type"
+    t.string   "firstName"
+    t.string   "lastName"
   end
 
   add_index "investors", ["email"], :name => "index_investors_on_email", :unique => true
@@ -62,6 +66,8 @@ ActiveRecord::Schema.define(:version => 20120211231414) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "firstName"
+    t.string   "lastName"
   end
 
   add_index "students", ["email"], :name => "index_students_on_email", :unique => true
