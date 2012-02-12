@@ -3,6 +3,7 @@ class ProfilesController < ApplicationController
   before_filter :authenticate_admin!, :only => [:adminProfile] 
   before_filter :authenticate_student!, :only => [:studentProfile]
   before_filter :authenticate_investor!, :only => [:investorProfile]
+  layout "mainLayout"
   
   def adminProfile
     @admin = current_admin
