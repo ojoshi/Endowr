@@ -1,3 +1,10 @@
-<%= @admin.created_at.strftime("%d %b") %>
+<p>
+	<%= @admin.firstName + " " + @admin.lastName %>
+<p>
+	Profile was created at : <%=@admin.created_at.strftime("%d %b") %>
+</p>
 
-<%= @admin.firstName + " " + @admin.lastName %>
+<p>
+	Last signed in at:
+	<%= @admin.last_sign_in_at.strftime("%d %b")  %>
+</p>

@@ -9,13 +9,8 @@
 
       <link rel="shortcut icon" href="img/favicon.ico">
       <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	
-	
-		<%= stylesheet_link_tag "application.css" %>
-		<%= stylesheet_link_tag :defaults %>
 
-      <!-- For the less-enabled mobile browsers like Opera Mini -->
-		<%= stylesheet_link_tag 'handheld.css?v=1'%>
+		<%= render 'layouts/stylesheets'%>
 
       <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,45 +22,8 @@
       <title> Endowr | Endorse Potential. Empower Students. </title>
    </head>
 <body>
-    <header class="container_24">
-        <div id="logo">
-			<%= link_to image_tag("img/logo.png", :alt => "Endowr Logo"), '#' %>
-        </div>
-        <nav class="grid_17">
-            <ul>
-                <li>
-					<%= link_to "Home", '#'%>
-                </li>
-                <li>
-					<%= link_to "Our Story", '#'%>
-                </li>
-                <li>
-					<%= link_to "How It Works", '#'%>
-                </li>
-            </ul>
-        </nav>
-        <menu>
-            <ul id="headSocial">
-                <li>
-					<%= link_to image_tag("img/icons/facebook.png", :alt => "Facebook"), "http://www.facebook.com/endowr"%>
-                </li>
-                <li>
-					<%= link_to image_tag("img/icons/twitter.png", :alt => "Twitter"), "http://www.twitter.com/endowr" %>
-                </li>
-                <li>
-					<%= link_to "Login", '#'%>
-                </li>
-            </ul>
-        </menu>
-        <form action="" method="get" class="grid_7">
-            <p>
-                Search<input type="text" name="search" value="" id="search" class="rounded5" />
-            </p>
-        </form>
-    </header> 
-	<div id = "mainContainer">
-		<%= yield %>
-	</div>
+	<%= render 'layouts/header'%>
+	<%= yield %>
+	<%= render 'layouts/siteInfo'%>
 </body>
 </html>
-
